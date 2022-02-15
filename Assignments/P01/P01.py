@@ -2,7 +2,6 @@ from fileinput import close
 import json
 from textwrap import indent
 from turtle import left, right
-
 from rich import print
 import random
 from collections import defaultdict
@@ -21,6 +20,10 @@ d = defaultdict(dict)
 sorted_data = sorted(data, key= lambda x: x['population'], reverse=True)
 
 
+
+
+# used to filter out states we need 
+# also appends biggest cities in each state to add to a new json file to be used for later in the program
 us_states = ['Alabama', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Washington DC', 'Delaware', 'Florida', 'Georgia',  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
 temp=[] # temp list to make sure that we don't visit the same state again
 for i in sorted_data:
@@ -128,9 +131,11 @@ def makeLineString(leftside):
     }
     return feature
     
-temp_1 = 1
-temp_2 = 2
 
+
+
+# creates the lines for each state based on the rank
+# the lines draws by long and lat of each city 
 g = legit_data
 leftSide = []
 
