@@ -1,8 +1,5 @@
 from fileinput import close
 import json
-from textwrap import indent
-from turtle import left, right
-from rich import print
 import random
 from collections import defaultdict
 
