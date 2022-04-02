@@ -133,7 +133,7 @@ def makeLineString(leftside):
 
 # creates the lines for each state based on the rank
 # the lines draws by long and lat of each city 
-g = legit_data
+
 leftSide = []
 
 for i in range(len(legit_data)-1):   
@@ -141,12 +141,12 @@ for i in range(len(legit_data)-1):
      leftSide.append([legit_data[i+1]["longitude"], legit_data[i+1]["latitude"]])
     
 
-points = []
+
 for stateInfo in legit_data:
     FeatureCollection["features"].append(makePoint(stateInfo))
  
 
-linestring = []
+
 FeatureCollection["features"].append(makeLineString(leftSide))
 
 

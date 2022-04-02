@@ -4,7 +4,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#62c52b",
+                "marker-color": "#b3b8a3",
                 "marker-symbol": [
                     1
                 ],
@@ -24,7 +24,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#08efac",
+                "marker-color": "#bea885",
                 "marker-symbol": [
                     2
                 ],
@@ -44,7 +44,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#4ad344",
+                "marker-color": "#e08ee6",
                 "marker-symbol": [
                     3
                 ],
@@ -64,7 +64,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#fa32b5",
+                "marker-color": "#33be98",
                 "marker-symbol": [
                     4
                 ],
@@ -84,7 +84,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#4c9d60",
+                "marker-color": "#0d106a",
                 "marker-symbol": [
                     5
                 ],
@@ -104,7 +104,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#0b2b9a",
+                "marker-color": "#70d600",
                 "marker-symbol": [
                     6
                 ],
@@ -124,7 +124,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#f018f9",
+                "marker-color": "#7d9827",
                 "marker-symbol": [
                     7
                 ],
@@ -144,7 +144,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#968bfd",
+                "marker-color": "#ba51ca",
                 "marker-symbol": [
                     8
                 ],
@@ -164,7 +164,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#3384c9",
+                "marker-color": "#73c242",
                 "marker-symbol": [
                     9
                 ],
@@ -184,7 +184,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#f20d0f",
+                "marker-color": "#f50199",
                 "marker-symbol": [
                     10
                 ],
@@ -204,7 +204,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#a4845e",
+                "marker-color": "#ea2e26",
                 "marker-symbol": [
                     11
                 ],
@@ -224,7 +224,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#ad2d28",
+                "marker-color": "#6cda5f",
                 "marker-symbol": [
                     12
                 ],
@@ -244,7 +244,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#3cb3d1",
+                "marker-color": "#12a224",
                 "marker-symbol": [
                     13
                 ],
@@ -264,7 +264,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#378fda",
+                "marker-color": "#eb0282",
                 "marker-symbol": [
                     14
                 ],
@@ -284,7 +284,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#85ebfd",
+                "marker-color": "#ca20c8",
                 "marker-symbol": [
                     15
                 ],
@@ -304,7 +304,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#354f81",
+                "marker-color": "#646e39",
                 "marker-symbol": [
                     16
                 ],
@@ -324,7 +324,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#807b7d",
+                "marker-color": "#9ac7bf",
                 "marker-symbol": [
                     17
                 ],
@@ -344,7 +344,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#1b2a90",
+                "marker-color": "#1f327f",
                 "marker-symbol": [
                     18
                 ],
@@ -364,7 +364,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#8f933e",
+                "marker-color": "#c689c0",
                 "marker-symbol": [
                     19
                 ],
@@ -384,7 +384,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#8af416",
+                "marker-color": "#7deb66",
                 "marker-symbol": [
                     20
                 ],
@@ -404,7 +404,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#280f06",
+                "marker-color": "#0254dd",
                 "marker-symbol": [
                     21
                 ],
@@ -424,7 +424,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#a66a7f",
+                "marker-color": "#b2fd33",
                 "marker-symbol": [
                     22
                 ],
@@ -444,7 +444,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#258624",
+                "marker-color": "#de8bd7",
                 "marker-symbol": [
                     23
                 ],
@@ -464,7 +464,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#5cc634",
+                "marker-color": "#b6d6fd",
                 "marker-symbol": [
                     24
                 ],
@@ -484,7 +484,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#0384e2",
+                "marker-color": "#96a164",
                 "marker-symbol": [
                     25
                 ],
@@ -504,7 +504,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#ab8f8f",
+                "marker-color": "#aa0436",
                 "marker-symbol": [
                     26
                 ],
@@ -524,7 +524,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#cc0074",
+                "marker-color": "#992998",
                 "marker-symbol": [
                     27
                 ],
@@ -544,7 +544,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#d31eeb",
+                "marker-color": "#2cf99f",
                 "marker-symbol": [
                     28
                 ],
@@ -564,7 +564,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#eb12c1",
+                "marker-color": "#3ed009",
                 "marker-symbol": [
                     29
                 ],
@@ -584,7 +584,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#06d5e5",
+                "marker-color": "#1910c4",
                 "marker-symbol": [
                     30
                 ],
@@ -604,7 +604,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#695df7",
+                "marker-color": "#ee24d7",
                 "marker-symbol": [
                     31
                 ],
@@ -624,7 +624,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#24aac8",
+                "marker-color": "#3272a0",
                 "marker-symbol": [
                     32
                 ],
@@ -644,7 +644,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#8695b4",
+                "marker-color": "#f83dd1",
                 "marker-symbol": [
                     33
                 ],
@@ -664,7 +664,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#0bdbc3",
+                "marker-color": "#f375ab",
                 "marker-symbol": [
                     34
                 ],
@@ -684,7 +684,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#e06c63",
+                "marker-color": "#bfb067",
                 "marker-symbol": [
                     35
                 ],
@@ -704,7 +704,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#b71cf2",
+                "marker-color": "#f9c1e5",
                 "marker-symbol": [
                     36
                 ],
@@ -724,7 +724,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#769a6c",
+                "marker-color": "#ff6a4a",
                 "marker-symbol": [
                     37
                 ],
@@ -744,7 +744,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#097cea",
+                "marker-color": "#734412",
                 "marker-symbol": [
                     38
                 ],
@@ -764,7 +764,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#e18c9d",
+                "marker-color": "#a3d5a1",
                 "marker-symbol": [
                     39
                 ],
@@ -784,7 +784,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#4bdb9d",
+                "marker-color": "#7d0f84",
                 "marker-symbol": [
                     40
                 ],
@@ -804,7 +804,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#3fef2a",
+                "marker-color": "#c36674",
                 "marker-symbol": [
                     41
                 ],
@@ -824,7 +824,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#6afd3d",
+                "marker-color": "#1a048d",
                 "marker-symbol": [
                     42
                 ],
@@ -844,7 +844,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#f11ffe",
+                "marker-color": "#10cefc",
                 "marker-symbol": [
                     43
                 ],
@@ -864,7 +864,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#fe083d",
+                "marker-color": "#2874d1",
                 "marker-symbol": [
                     44
                 ],
@@ -884,7 +884,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#cf5c5e",
+                "marker-color": "#a1a0f8",
                 "marker-symbol": [
                     45
                 ],
@@ -904,7 +904,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#bb5a66",
+                "marker-color": "#fd0f93",
                 "marker-symbol": [
                     46
                 ],
@@ -924,7 +924,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#3e552d",
+                "marker-color": "#6e4d75",
                 "marker-symbol": [
                     47
                 ],
@@ -944,7 +944,7 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#a00da1",
+                "marker-color": "#ef9984",
                 "marker-symbol": [
                     48
                 ],
@@ -964,7 +964,7 @@
         {
             "type": "Feature",
             "properties": {
-                "color": "#a7af99"
+                "color": "#6456f1"
             },
             "geometry": {
                 "type": "LineString",
