@@ -10,10 +10,13 @@ from rich import print
 from math import radians, cos, sin, asin,tan, atan,sqrt
 
 
+# ufo data set to global
 gs = None
 df = None
 ufoPoints = []
 
+
+# brute force method to calulate all the distance fir cities
 def haversineDistance(lon1, lat1, lon2, lat2, units="miles"):
     """Calculate the great circle distance in kilometers between two points on the earth (start and end) where each point
         is specified in decimal degrees.
@@ -39,7 +42,7 @@ def haversineDistance(lon1, lat1, lon2, lat2, units="miles"):
     r = radius[units]  # choose miles or km for results
     return c * r
 
-
+#makes json file for new data
 def makePointsList():
   # adding the points using geopandas
   # taking from Prof G example in P02
@@ -60,7 +63,7 @@ def makePointsList():
 
   return cities
 
-
+#function to calculate city distance
 def calcCityDistances(cities):
   for i in range(len(cities)):
       lon1,lat1 = cities[i]['point']
@@ -77,7 +80,7 @@ def calcCityDistances(cities):
 
 
 
-
+# write to new json
 def saveJson(data,name):
   with open(name,"w") as f:
     f.write(json.dumps(data,indent=2))
@@ -86,12 +89,12 @@ def saveJson(data,name):
 
 
 
-
+# loading ufos 
 def loadUfos():
   global df
   df = pd.read_csv('ufo.csv')
 
-
+# making ufos into points to be used for another function
 def loadUfoIndex():
   global gs
   global df
@@ -102,7 +105,7 @@ def loadUfoIndex():
   gs = geopandas.GeoSeries(ufoPoints)
   
 
-
+# function to make a list of cities points 
 def cities_points():
   city_points = []
   for i in range(len(cities)):
@@ -114,7 +117,7 @@ def cities_points():
 
 
 
-
+#function to find the closest ufos for each city
 def findClosestUfos(city_point):
   global gs
 
@@ -123,7 +126,6 @@ def findClosestUfos(city_point):
   for i in range(len(city_point)):
     
     cp = Point(city_point[i])
-  
     distances = gs.distance(cp)
     
 
@@ -132,12 +134,7 @@ def findClosestUfos(city_point):
       sortedDistance.append((i,distances[i]))
     sortedDistance.sort(key = lambda x: x[1]) 
 
-
-   
     close_ufos = sortedDistance[0:100]
-    
-
-    
     closestUfos.append(close_ufos)
   
 
@@ -145,7 +142,6 @@ def findClosestUfos(city_point):
   for  j in range(len(cities)):
     cities[j]["ufos"].append(closestUfos[j])
     
-
   return cities
 
   
@@ -156,21 +152,6 @@ def findClosestUfos(city_point):
   
 
   
-  # # #places all the json data here in dic to be dump into json  file
-  # # new_json_city = []
-  
-  # for i in range(len(gs)):
-  #     distance_dic = []
-
-  #     # gets the distance of each points
-  #     distance = gs.distance(gs[i])
-  #     print(distance)
-  #     #cities[i]['distances'] = distance
-
-  # return cities
-
-
-
 
 
 
@@ -182,12 +163,8 @@ if __name__=='__main__':
 
   cities = makePointsList()
   cities = calcCityDistances(cities)
-  
-  
   loadUfos()
   loadUfoIndex()
   citys = cities_points()
   cities = findClosestUfos(citys)
-  
-
   saveJson(cities,"distance_cities.json")
