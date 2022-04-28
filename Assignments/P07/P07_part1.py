@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     running = True
     # switch to kill game after box hits the bottom
-    # switch = pg.Rect(350, 300, 50, 50)
+    switch = pg.Rect(351.00, 325.00, 401.00, 375.00)
 
     change_x = 1
     change_y = 0
@@ -96,7 +96,12 @@ if __name__ == '__main__':
         #moving box
         box_X += 4
         box = Rect(box_X, box_Y, box_w, box_h)
-        print(box)
+        #prints found points within box
+        # also print width and height 
+        print(foundPoints,(box_w,box_h))
+        # clear list each time new points are found
+        foundPoints.clear()
+        
 
         displayBox = pg.Rect(box_X - 25, box_Y - 25, box_w, box_h)
 
@@ -112,6 +117,9 @@ if __name__ == '__main__':
             box_X = 0
             box_Y += 50
             box = Rect(box_X, box_Y, box_w, box_h)
+            # foundPoints.clear()
+            # print(foundPoints)
+
 
         
         qt.draw(screen, radius)
