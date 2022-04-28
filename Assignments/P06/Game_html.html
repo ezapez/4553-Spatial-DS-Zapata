@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GeoJSON viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+        #text {
+            height: 100%;
+            width: 35%;
+            float: right;
+        }
+
+        #country {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        #geojsontext {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 90%;
+            height: 80%;
+        }
+
+        #submit {
+            margin: 20px;
+        }
+
+        /* More table styling */
+        /* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+
+        #history {
+            border-collapse: collapse;
+            visibility: hidden;
+        }
+
+        #history td,
+        #history th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            margin: 0px;
+        }
+
+        #history tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #history tr:hover {
+            background-color: #ddd;
+        }
+
+        #history th {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            text-align: left;
+            background-color: #b0107b;
+            color: white;
+            margin: 0px;
+        }
+    </style>
+
+
+
+    
+    <link rel="'stylesheet" href="/home/ezap/school_codes/4553-Spatial-DS-Zapata/Assignments/P06/style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="text">
+        <p>Welcome to Wordle 1.0</p>
+        <P>Country has been chosen</P>
+        <label for="country">Show a Countries Polygon:</label>
+
+        <select name="country" id="country">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <div>
+            <table id="history">
+                <row>
+                    <th>Country</th>
+                    <th>Center Point</th>
+                    <th>Distance to Target</th>
+                </row>
+
+            </table>
+        </div>
+
+        <input type="button" id="submit" value="Submit">
+        <hr>
+    </div>
+     <script src="game_script.js"></script>
+</body>
+
+</html>
