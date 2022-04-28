@@ -12,5 +12,5 @@
 ## link to replit to run quick
 
  
-|   2   |<a href ="https://replit.com/@ezap/P07part1#main.py">P07_part1.py</a>  | Main 1
-|   3   |<a href ="https://replit.com/@ezap/P07part2#main.py">P07_part2.py</a>  | Main 2
+<a href ="https://replit.com/@ezap/P07part1#main.py">P07_part1.py</a>  
+<a href ="https://replit.com/@ezap/P07part2#main.py">P07_part2.py</a> 
