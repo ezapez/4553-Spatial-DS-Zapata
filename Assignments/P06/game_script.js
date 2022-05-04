@@ -6,6 +6,7 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attribution/">CartoDB</a>',
             subdomains: "abcd",
             maxZoom: 19
+            
         }).addTo(map);
 
         // Add Layer Group
@@ -38,6 +39,7 @@
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
+        
 
             // Add some text to the new cells:
             cell1.innerHTML = name;
@@ -85,6 +87,12 @@
             return name;
         }
 
+        function showPolygon(){
+
+            var e = document.getElementById("polygon_country");
+
+        }
+
         /**
          * updatePolygonCenter: Writes the center point passed in to a "hidden" element to be used 
          *      for the maps fly feature
@@ -101,7 +109,14 @@
             localStorage.setItem('polygonCenterPoint', data);
 
             let distance = localStorage.getItem('distance');
-            console.log("distance: " + distance)
+            
+
+            
+
+
+          
+
+
 
             // appendTableRow(localStorage.getItem('lastCountry'), localStorage.getItem('polygonCenterPoint'), distance)
 
@@ -177,8 +192,48 @@
             // go to function update 
             localStorage.setItem('distance', data['distance']);
             localStorage.setItem('bearing', data['bearing']);
+
+            if (data["distance"] == 0){
+                appendTableRow(localStorage.getItem('lastCountry'), localStorage.getItem('polygonCenterPoint'), "You Won!!!")
+                chooseRandomTarget();
+
+
+            }
+            else{
+
+                appendTableRow(localStorage.getItem('lastCountry'), localStorage.getItem('polygonCenterPoint'), data["distance"])
+
+            }
+
+
+
+
+
+
+
+            
             // this fixes the distance 
-            appendTableRow(localStorage.getItem('lastCountry'), localStorage.getItem('polygonCenterPoint'), data["distance"])
+            
+            // if(distance == 0)
+            // {
+            //     // document.addEventListener('DOMContentLoaded', () => {
+            //     //     (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            //     //       const $notification = $delete.parentNode;
+                  
+            //     //       $delete.addEventListener('click', () => {
+            //     //         $notification.parentNode.removeChild($notification);
+            //     //       });
+            //     //     });
+            //     //   });
+            //     console.log("you won!!!")
+            // }
+            // else{
+            //     console.log("distance: " + distance)
+            // }
+
+
+
+
         }
 
         /**
@@ -225,9 +280,15 @@
             localStorage.setItem('lastCountry', name);
 
         }
-
+      
+    
         // add event listener to the submit button to call api and get a country polygon
         document.getElementById("submit").addEventListener("click", apiGetCountryPoly);
+
+       
+          
+        
+        
 
         // load drop down with existing country names
         // erasing the old cars :) 
@@ -235,4 +296,9 @@
             apiGetCountryNames();
             chooseRandomTarget();
         };
+
+
+
+
+        
     

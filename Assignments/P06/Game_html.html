@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>GeoJSON viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,6 +9,10 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+           <!--Bulma CSS CDN-->
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+      <!--To make use of Font Awesome icons-->
+      <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <style>
         html,
         body {
@@ -17,24 +20,20 @@
             margin: 0;
             padding: 0;
         }
-
         #map {
             width: 60%;
             height: 100%;
             float: left;
         }
-
         #text {
             height: 100%;
             width: 35%;
             float: right;
         }
-
         #country {
             margin-top: 15px;
             margin-bottom: 25px;
         }
-
         #geojsontext {
             display: block;
             margin-left: auto;
@@ -43,57 +42,59 @@
             width: 90%;
             height: 80%;
         }
-
         #submit {
             margin: 20px;
         }
-
         /* More table styling */
         /* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
-
         #history {
             border-collapse: collapse;
             visibility: hidden;
         }
-
         #history td,
         #history th {
-            border: 1px solid #ddd;
+            border: 1px solid lightblue;
             padding: 8px;
             margin: 0px;
         }
-
         #history tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: lightgrey;
         }
-
         #history tr:hover {
-            background-color: #ddd;
+            background-color: lightgray;
         }
-
         #history th {
             padding-top: 6px;
             padding-bottom: 6px;
             text-align: left;
-            background-color: #b0107b;
-            color: white;
+            background-color: maroon;
+            color: lightgray;
             margin: 0px;
         }
+        p{
+            font-family: Arial;
+            font-size: 30px;
+            color:rgb(15, 0, 128);
+            font-weight: bolder;
+        }
     </style>
-
-
-
-    
     <link rel="'stylesheet" href="/home/ezap/school_codes/4553-Spatial-DS-Zapata/Assignments/P06/style.css">
 </head>
-
 <body>
+    <!--  this is for when you win  -->
+    <!-- <div class="notification is-success" >
+        <button class="delete"></button>
+        You won
+    </div> -->
     <div id="map"></div>
     <div id="text">
         <p>Welcome to Wordle 1.0</p>
-        <P>Country has been chosen</P>
+        <p>Country has been chosen</p>
+        <canvas id="canvas" width=240 height=240 style="background-color:#808080;">
+            
+        </canvas>
+        <br>
         <label for="country">Show a Countries Polygon:</label>
-
         <select name="country" id="country">
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
@@ -107,14 +108,12 @@
                     <th>Center Point</th>
                     <th>Distance to Target</th>
                 </row>
-
             </table>
         </div>
-
-        <input type="button" id="submit" value="Submit">
+        <!-- <input type="button" id="submit" value="Submit"> -->
+        <button class="button is-success" id="submit" value="Submit">Submit</button>
         <hr>
     </div>
      <script src="game_script.js"></script>
 </body>
-
 </html>
